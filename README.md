@@ -6,7 +6,7 @@ Application allows to monitor PostgreSQL database. Each 10 seconds GET request i
 
 - **Backend** [Link to repo](https://github.com/danielu221/postgres-monitoring-backend):
 - NodeJS with Express
-- PostgreSQL with sample database (link)
+- PostgreSQL with sample database [schema here](http://www.postgresqltutorial.com/postgresql-sample-database/)
 
 ## How to run
 

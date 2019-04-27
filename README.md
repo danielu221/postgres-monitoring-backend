@@ -11,9 +11,19 @@ Application allows to monitor PostgreSQL database. Each 10 seconds GET request i
 ## How to run
 
 1. Restore PostgreSQL db data and run server from backend repo 
-2. Run `npm install` to install dependencies for frontend from frontend repo 
-3. Run `npm start` on frontend side for a dev server. 
-4. Navigate to `http://localhost:4200/`.
+2. Edit queries.js with your db credentials:
+```
+const pool = new Pool({
+  user: 'your_user',
+  host: 'localhost',
+  database: 'your_db_name',
+  password: 'your_password',
+  port: 5432,
+})
+```
+3. Run `npm install` to install dependencies for frontend from frontend repo 
+4. Run `npm start` on frontend side for a dev server. 
+5. Navigate to `http://localhost:4200/`.
 
 ## Authors
 - Mateusz Danieluk

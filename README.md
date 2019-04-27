@@ -21,9 +21,12 @@ const pool = new Pool({
   port: 5432,
 })
 ```
-3. Run `npm install` to install dependencies for frontend from frontend repo 
-4. Run `npm start` on frontend side for a dev server. 
-5. Navigate to `http://localhost:4200/`.
+3. You have to restart the Postgresql Server in order to load the shared library and afterwards execute
+```CREATE EXTENSION pg_stat_statements;```
+in the database you want to monitor.
+4. Run `npm install` to install dependencies for frontend from frontend repo 
+5. Run `npm start` on frontend side for a dev server. 
+6. Navigate to `http://localhost:4200/`.
 
 ## Authors
 - Mateusz Danieluk
